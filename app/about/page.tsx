@@ -109,69 +109,12 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          {/* ── Michelle ── */}
-          <div className="border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-
-            {/* Portrait image */}
-            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px]">
-              <Image
-                src="/images/michelle.jpg"
-                alt="Michelle — Master Stylist at Outlawed on Main"
-                fill
-                priority
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              {/* Subtle bottom gradient so the image transitions cleanly */}
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
-            </div>
-
-            {/* Bio panel — dark background */}
-            <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
-
-              <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
-                Master Stylist
-              </p>
-
-              <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
-                Michelle
-              </h3>
-
-              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-10 max-w-prose">
-                I have spent 16 years mastering the art of blending beauty with reality. A master
-                of extensions, a wizard of blonde, and a fierce competitor in barrel racing — I
-                know firsthand that strength, beauty, and confidence go hand in hand. I race
-                barrels, tend to my farm, and still have maintainable hair — and I help my clients
-                get the hair they dream of, without sacrificing the life they love.
-              </p>
-
-              {/* Credentials */}
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-cream/10 pt-8">
-                {[
-                  { stat: '16 yrs', label: 'Experience' },
-                  { stat: 'Master', label: 'Extensions' },
-                  { stat: 'Blonde', label: 'Specialist' },
-                ].map(({ stat, label }) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-cream font-light leading-none">
-                      {stat}
-                    </span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-cream/40">
-                      {label}
-                    </span>
-                  </div>
-                ))}
-              </div>
-
-            </div>
-          </div>
-
           {/* ── Crystal ── */}
           <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
             {/* Bio panel — left for alternation */}
             <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-1">
               <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
-                Owner · Stylist
+                Owner
               </p>
               <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
                 Crystal
@@ -186,18 +129,12 @@ export default function AboutPage() {
                 about my clients and love building real relationships while helping you feel confident every
                 time you leave my chair.
               </p>
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-cream/10 pt-8">
-                {[
-                  { stat: '15 yrs', label: 'Experience' },
-                  { stat: 'Vivid', label: 'Color' },
-                  { stat: 'Master', label: 'Extensions' },
-                ].map(({ stat, label }) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-cream font-light leading-none">{stat}</span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-cream/40">{label}</span>
-                  </div>
-                ))}
-              </div>
+              <a
+                href="#"
+                className="self-start bg-brand-cream text-brand-black px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+              >
+                Book Crystal
+              </a>
             </div>
             {/* Portrait */}
             <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-2">
@@ -209,6 +146,54 @@ export default function AboutPage() {
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
+            </div>
+          </div>
+
+          {/* ── Megan ── */}
+          <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+            {/* Portrait — left */}
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-1">
+              <Image
+                src="/images/megan.jpg"
+                alt="Megan — Owner and Stylist at Outlawed on Main"
+                fill
+                className="object-cover object-left"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
+            </div>
+            {/* Bio panel — dark, right */}
+            <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-2">
+              <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
+                Owner
+              </p>
+              <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
+                Megan
+              </h3>
+              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-4 max-w-prose">
+                I&apos;ve been behind the chair for 19 years, and I still love it just as much as day one.
+                I specialize in custom color, bomb blondes, seamless extensions, and cuts that grow out
+                beautifully and fit your real life.
+              </p>
+              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-4 max-w-prose">
+                I&apos;m all about hair that feels effortless but makes a statement — lived-in, dimensional,
+                and tailored just for you. Whether you want bold or natural, I&apos;m here to make sure you
+                leave feeling confident and unstoppable.
+              </p>
+              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-10 max-w-prose">
+                When I&apos;m not in the salon, I&apos;m with my husband and our two kids — the real reason
+                behind the hustle. Building this business, raising babies, and doing life alongside my best
+                friend of 15 years has been the wildest, most rewarding ride. Outlawed isn&apos;t just a salon
+                to me. It&apos;s loyalty. It&apos;s grit. It&apos;s heart. And I&apos;m proud of what we&apos;ve built.
+              </p>
+              <a
+                href="https://meganstegall.glossgenius.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start bg-brand-cream text-brand-black px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+              >
+                Book Megan
+              </a>
             </div>
           </div>
 
@@ -278,18 +263,14 @@ export default function AboutPage() {
                 confident, polished, and effortlessly beautiful. Proud mom of two who believes
                 self-care isn&apos;t a luxury — it&apos;s a necessity.
               </p>
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-black/10 pt-8">
-                {[
-                  { stat: '18 yrs', label: 'Experience' },
-                  { stat: 'Lash', label: 'Extensions' },
-                  { stat: 'Brow', label: 'Lamination' },
-                ].map(({ stat, label }) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-black font-light leading-none">{stat}</span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-black/40">{label}</span>
-                  </div>
-                ))}
-              </div>
+              <a
+                href="https://brittanydanielle.glossgenius.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+              >
+                Book Brittany
+              </a>
             </div>
           </div>
 
@@ -324,70 +305,51 @@ export default function AboutPage() {
                 relationships where my guests feel heard, confident, and completely themselves. I&apos;m dedicated
                 to healthy hair, tailored results, and making every appointment an experience — not just a service. 🤍
               </p>
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-black/10 pt-8">
-                {[
-                  { stat: '18 yrs', label: 'Experience' },
-                  { stat: 'Blonde', label: 'Specialist' },
-                  { stat: 'Color', label: 'Artist' },
-                ].map(({ stat, label }) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-black font-light leading-none">{stat}</span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-black/40">{label}</span>
-                  </div>
-                ))}
-              </div>
+              <a
+                href="https://cinnamongodwin.glossgenius.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+              >
+                Book Cinnamon
+              </a>
             </div>
           </div>
 
-          {/* ── Megan ── */}
+          {/* ── Michelle ── */}
           <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-            {/* Bio panel — right */}
-            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-2">
+            {/* Portrait */}
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px]">
+              <Image
+                src="/images/michelle.jpg"
+                alt="Michelle — Master Stylist at Outlawed on Main"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
+            </div>
+            {/* Bio panel — light */}
+            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
               <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
                 Stylist
               </p>
               <h3 className="font-display text-5xl md:text-6xl text-brand-black leading-none font-light mb-6">
-                Megan
+                Michelle
               </h3>
-              <p className="font-body text-base text-brand-muted leading-relaxed mb-4 max-w-prose">
-                I&apos;ve been behind the chair for 19 years, and I still love it just as much as day one.
-                I specialize in custom color, bomb blondes, seamless extensions, and cuts that grow out
-                beautifully and fit your real life.
-              </p>
-              <p className="font-body text-base text-brand-muted leading-relaxed mb-4 max-w-prose">
-                I&apos;m all about hair that feels effortless but makes a statement — lived-in, dimensional,
-                and tailored just for you. Whether you want bold or natural, I&apos;m here to make sure you
-                leave feeling confident and unstoppable.
-              </p>
               <p className="font-body text-base text-brand-muted leading-relaxed mb-10 max-w-prose">
-                When I&apos;m not in the salon, I&apos;m with my husband and our two kids — the real reason
-                behind the hustle. Building this business, raising babies, and doing life alongside my best
-                friend of 15 years has been the wildest, most rewarding ride. Outlawed isn&apos;t just a salon
-                to me. It&apos;s loyalty. It&apos;s grit. It&apos;s heart. And I&apos;m proud of what we&apos;ve built.
+                I have spent 16 years mastering the art of blending beauty with reality. A master
+                of extensions, a wizard of blonde, and a fierce competitor in barrel racing — I
+                know firsthand that strength, beauty, and confidence go hand in hand. I race
+                barrels, tend to my farm, and still have maintainable hair — and I help my clients
+                get the hair they dream of, without sacrificing the life they love.
               </p>
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-black/10 pt-8">
-                {[
-                  { stat: '19 yrs', label: 'Experience' },
-                  { stat: 'Master', label: 'Extensions' },
-                  { stat: 'Color', label: 'Specialist' },
-                ].map(({ stat, label }) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-black font-light leading-none">{stat}</span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-black/40">{label}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* Portrait — left */}
-            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-1">
-              <Image
-                src="/images/megan.jpg"
-                alt="Megan — Owner and Stylist at Outlawed on Main"
-                fill
-                className="object-cover object-left"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
+              <a
+                href="#"
+                className="self-start bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+              >
+                Book Michelle
+              </a>
             </div>
           </div>
 
