@@ -109,14 +109,14 @@ export default function AboutPage() {
             </h2>
           </div>
 
-          {/* ── Part A — Featured founder: Michelle ── */}
+          {/* ── Michelle ── */}
           <div className="border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
 
             {/* Portrait image */}
             <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px]">
               <Image
                 src="/images/michelle.jpg"
-                alt="Michelle — Co-Founder and Master Stylist at Outlawed on Main"
+                alt="Michelle — Master Stylist at Outlawed on Main"
                 fill
                 priority
                 className="object-cover object-top"
@@ -130,7 +130,7 @@ export default function AboutPage() {
             <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
 
               <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
-                Co-Owner · Master Stylist
+                Master Stylist
               </p>
 
               <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
@@ -171,7 +171,7 @@ export default function AboutPage() {
             {/* Bio panel — left for alternation */}
             <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-1">
               <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
-                Co-Owner · Stylist
+                Owner · Stylist
               </p>
               <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
                 Crystal
@@ -203,7 +203,7 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-2">
               <Image
                 src="/images/crystal.png"
-                alt="Crystal — Co-Owner and Stylist at Outlawed on Main"
+                alt="Crystal — Owner and Stylist at Outlawed on Main"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -382,7 +382,7 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-1">
               <Image
                 src="/images/megan.jpg"
-                alt="Megan — Co-Owner and Stylist at Outlawed on Main"
+                alt="Megan — Owner and Stylist at Outlawed on Main"
                 fill
                 className="object-cover object-left"
                 sizes="(max-width: 1024px) 100vw, 50vw"

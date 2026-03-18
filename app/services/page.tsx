@@ -150,9 +150,6 @@ export default function ServicesPage() {
                         <span className="font-body text-xs text-brand-muted tabular-nums">
                           {service.duration}
                         </span>
-                        <span className="font-display text-lg text-brand-black font-light min-w-[3.5rem] text-right">
-                          {service.price}
-                        </span>
                       </div>
                     </div>
                   ))}
