@@ -20,13 +20,13 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: 'Outlawed Beauty | Hair Coloring, Styling & Treatments',
-    template: '%s | Outlawed Beauty',
+    default: 'Outlawed on Main | Hair Coloring, Styling & Treatments',
+    template: '%s | Outlawed on Main',
   },
   description:
     'Premium hair coloring, styling, and treatments. Book your appointment online.',
   openGraph: {
-    siteName: 'Outlawed Beauty',
+    siteName: 'Outlawed on Main',
     type: 'website',
   },
 }

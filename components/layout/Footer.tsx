@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="max-w-xs">
             <p className="font-display text-2xl text-brand-cream mb-3 tracking-wide">
-              Outlawed Beauty
+              Outlawed on Main
             </p>
             <p className="font-body text-sm text-brand-cream/50 leading-relaxed">
               Premium hair coloring, styling, and treatments. Appointment-based. Book online.
@@ -73,7 +73,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-brand-cream/10 flex flex-col sm:flex-row justify-between gap-3">
           <p className="font-body text-xs text-brand-cream/30">
-            © {new Date().getFullYear()} Outlawed Beauty. All rights reserved.
+            © {new Date().getFullYear()} Outlawed on Main. All rights reserved.
           </p>
           <p className="font-body text-xs text-brand-cream/30">
             Online booking available 24/7

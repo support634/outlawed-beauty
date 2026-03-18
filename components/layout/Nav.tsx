@@ -17,7 +17,7 @@ export default function Nav() {
           href="/"
           className="font-display text-xl text-brand-black tracking-wide hover:opacity-70 transition-opacity"
         >
-          Outlawed Beauty
+          Outlawed on Main
         </Link>
 
         {/* Desktop links */}

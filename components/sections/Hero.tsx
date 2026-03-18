@@ -20,7 +20,7 @@ export default function Hero() {
 
             <p className="font-body text-lg text-brand-muted leading-relaxed max-w-md mb-10">
               Premium hair color, cuts, and treatments — tailored to you.
-              Book your appointment with Outlawed Beauty and transform the way you see yourself.
+              Book your appointment with Outlawed on Main and transform the way you see yourself.
             </p>
 
             <div className="flex flex-wrap gap-4">
@@ -61,7 +61,7 @@ export default function Hero() {
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden z-10">
               <Image
                 src="https://images.unsplash.com/photo-1504703395950-b89145a5425b?w=1000&q=90&fit=crop&crop=top"
-                alt="Outlawed Beauty — hair fashion model"
+                alt="Outlawed on Main — hair fashion model"
                 fill
                 className="object-cover object-top scale-105 hover:scale-100 transition-transform duration-700 ease-out"
                 priority

@@ -11,7 +11,7 @@ export default function About() {
           <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
             <Image
               src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80"
-              alt="Outlawed Beauty — stylist at work"
+              alt="Outlawed on Main — stylist at work"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -34,7 +34,7 @@ export default function About() {
               <span className="italic">Driven by You</span>
             </h2>
             <p className="font-body text-base text-brand-muted leading-relaxed max-w-prose mb-4">
-              Outlawed Beauty is more than a salon — it&apos;s a one-on-one experience with a stylist
+              Outlawed on Main is more than a salon — it&apos;s a one-on-one experience with a stylist
               who takes the time to understand your hair, your goals, and your lifestyle.
             </p>
             <p className="font-body text-base text-brand-muted leading-relaxed max-w-prose mb-10">
