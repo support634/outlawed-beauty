@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import { Instagram } from 'lucide-react'
 import CTABanner from '@/components/sections/CTABanner'
 
 export const metadata: Metadata = {
@@ -130,10 +131,13 @@ export default function AboutPage() {
                 time you leave my chair.
               </p>
               <a
-                href="#"
-                className="self-start bg-brand-cream text-brand-black px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+                href="https://www.instagram.com/balayandbake/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start flex items-center gap-2 text-brand-cream/70 hover:text-brand-cream transition-colors duration-200"
               >
-                Book Crystal
+                <Instagram className="w-5 h-5" />
+                <span className="font-body text-sm tracking-wide">@balayandbake</span>
               </a>
             </div>
             {/* Portrait */}
@@ -345,7 +349,7 @@ export default function AboutPage() {
                 get the hair they dream of, without sacrificing the life they love.
               </p>
               <a
-                href="#"
+                href="https://manemare.glossgenius.com/"
                 className="self-start bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
               >
                 Book Michelle
