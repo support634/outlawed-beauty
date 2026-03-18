@@ -42,14 +42,9 @@ export default function Services() {
               <p className="font-body text-sm text-brand-muted leading-relaxed mb-auto">
                 {service.description}
               </p>
-              <div className="flex items-center justify-between mt-6 pt-6 border-t border-[#E8E3DC]">
-                <span className="font-body text-sm font-medium text-brand-gold">
-                  {service.price}
-                </span>
+              <div className="flex items-center justify-end mt-6 pt-6 border-t border-[#E8E3DC]">
                 <a
-                  href={BOOKING_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="/about"
                   className="font-body text-xs text-brand-muted hover:text-brand-black transition-colors"
                 >
                   Book →

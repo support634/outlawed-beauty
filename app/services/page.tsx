@@ -5,7 +5,7 @@ import CTABanner from '@/components/sections/CTABanner'
 export const metadata: Metadata = {
   title: 'Services',
   description:
-    'Browse all services at Outlawed on Main — hair color, cuts, extensions, lash services, waxing, brow lamination, and more. Book online 24/7.',
+    'Browse all services at Outlawed on Main — hair color, cuts, extensions, lash services, waxing, brow lamination, and more. Book online today.',
 }
 
 const serviceCategories = [

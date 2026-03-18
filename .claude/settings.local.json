@@ -10,7 +10,13 @@
       "Bash(tasklist /FI \"PID eq 44044\" /FO LIST 2>/dev/null)",
       "Bash(taskkill //F //IM node.exe 2>/dev/null; echo \"done\")",
       "Bash(taskkill /F /IM node.exe 2>/dev/null; echo \"done\")",
-      "Bash(cd \"E:/FREELANCE/NLC Global/NLCSites/beauty-inspo\" && npm run build 2>&1)"
+      "Bash(cd \"E:/FREELANCE/NLC Global/NLCSites/beauty-inspo\" && npm run build 2>&1)",
+      "Bash(cp \"c:/Users/ROG/Downloads/Cinnamon.jpg\" \"E:/FREELANCE/NLC Global/NLCSites/beauty-inspo/public/images/cinnamon.jpg\" && cp \"c:/Users/ROG/Downloads/Megan.jpg\" \"E:/FREELANCE/NLC Global/NLCSites/beauty-inspo/public/images/megan.jpg\" && echo \"done\")",
+      "WebFetch(domain:brittanydanielle.glossgenius.com)",
+      "WebFetch(domain:meganstegall.glossgenius.com)",
+      "Bash(cmd /c \"tasklist /FI \\\\\"PID eq 41540\\\\\"\")",
+      "Bash(taskkill /F /IM node.exe 2>&1)",
+      "Bash(taskkill /F /IM node.exe 2>/dev/null || echo \"No node processes found\")"
     ]
   }
 }

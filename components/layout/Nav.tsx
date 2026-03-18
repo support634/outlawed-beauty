@@ -36,9 +36,7 @@ export default function Nav() {
         {/* Desktop CTA + mobile toggle */}
         <div className="flex items-center gap-4">
           <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/about"
             className="hidden md:block bg-brand-black text-brand-cream px-6 py-2.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
           >
             Book Now
@@ -71,9 +69,7 @@ export default function Nav() {
             </Link>
           ))}
           <a
-            href={BOOKING_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/about"
             className="mt-2 inline-block bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide text-center hover:opacity-80 transition-opacity"
             onClick={() => setMobileOpen(false)}
           >

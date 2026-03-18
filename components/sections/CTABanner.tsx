@@ -15,14 +15,11 @@ export default function CTABanner() {
         </h2>
 
         <p className="font-body text-base text-brand-cream/60 max-w-md mx-auto leading-relaxed mb-10">
-          Available online 24/7. Choose your service,
-          pick your time, and we'll take care of the rest.
+          Choose your service, pick your time, and we'll take care of the rest.
         </p>
 
         <a
-          href={BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/about"
         >
           <button className="bg-brand-cream text-brand-black px-10 py-4 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-90 active:scale-[0.98] transition-all duration-200">
             Book Now

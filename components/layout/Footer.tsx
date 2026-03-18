@@ -56,12 +56,10 @@ export default function Footer() {
               Ready?
             </p>
             <p className="font-body text-sm text-brand-cream/50 leading-relaxed max-w-[200px]">
-              Book your appointment online, available 24/7.
+              Book your appointment online.
             </p>
             <a
-              href={BOOKING_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/about"
               className="inline-block border border-brand-cream/30 text-brand-cream px-6 py-2.5 rounded-full font-body text-sm font-medium tracking-wide hover:border-brand-cream hover:bg-brand-cream/10 transition-all duration-200 text-center"
             >
               Book Now
@@ -76,7 +74,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Outlawed on Main. All rights reserved.
           </p>
           <p className="font-body text-xs text-brand-cream/30">
-            Online booking available 24/7
+            Online booking available
           </p>
         </div>
       </div>

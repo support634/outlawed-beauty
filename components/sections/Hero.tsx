@@ -24,7 +24,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <a href="/about">
                 <button className="bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200">
                   Book an Appointment
                 </button>
@@ -72,9 +72,7 @@ export default function Hero() {
 
               {/* Floating booking badge */}
               <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/about"
                 className="absolute bottom-6 left-6 right-6 z-20"
               >
                 <div className="bg-brand-cream/95 backdrop-blur-sm rounded-xl px-5 py-4 flex items-center justify-between hover:bg-white transition-colors duration-200 cursor-pointer">

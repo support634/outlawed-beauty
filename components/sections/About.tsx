@@ -43,7 +43,7 @@ export default function About() {
               how to maintain your look at home.
             </p>
             <div className="flex flex-wrap gap-4">
-              <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer">
+              <a href="/about">
                 <button className="bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200">
                   Book a Session
                 </button>

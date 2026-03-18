@@ -6,7 +6,7 @@ import { BOOKING_URL } from '@/lib/constants'
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Find Outlawed on Main at 211 S Main St, Monroe, NC 28112. Call us at (704) 774-3134 or book online 24/7.',
+    'Find Outlawed on Main at 211 S Main St, Monroe, NC 28112. Call us at (704) 774-3134 or book online.',
 }
 
 const hours = [
@@ -29,7 +29,7 @@ export default function ContactPage() {
             Get in Touch
           </p>
           <h1 className="font-display text-6xl md:text-8xl lg:text-[7rem] text-brand-cream leading-none font-light">
-            Find<br />
+            Contact<br />
             <span className="italic">Us</span>
           </h1>
         </div>
@@ -109,15 +109,6 @@ export default function ContactPage() {
               </div>
 
               {/* Book CTA */}
-              <a
-                href={BOOKING_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200 text-center"
-              >
-                Book an Appointment
-              </a>
-
             </div>
 
             {/* Right — embedded map */}

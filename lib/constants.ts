@@ -77,7 +77,7 @@ export const HOW_IT_WORKS = [
   {
     step: '01',
     title: 'Book Online',
-    description: 'Choose your service and preferred time online. Available 24/7 — no phone calls needed.',
+    description: 'Choose your service and preferred time online — no phone calls needed.',
   },
   {
     step: '02',

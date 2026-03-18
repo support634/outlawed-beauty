@@ -404,7 +404,7 @@ export default function AboutPage() {
       </section>
 
       {/* ─── 5. CTA Banner ──────────────────────────────────────────────────── */}
-      <CTABanner />
+      {/* <CTABanner /> */}
     </>
   )
 }
