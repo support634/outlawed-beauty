@@ -251,13 +251,13 @@ export default function AboutPage() {
             </div>
           )}
 
-          {/* ── Cinnamon ── */}
+          {/* ── Brittany ── */}
           <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
             {/* Portrait */}
             <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px]">
               <Image
-                src="/images/cinnamon.jpg"
-                alt="Cinnamon — Stylist at Outlawed on Main"
+                src="/images/brittany.jpg"
+                alt="Brittany — Licensed Esthetician at Outlawed on Main"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
@@ -265,32 +265,74 @@ export default function AboutPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
             </div>
             {/* Bio panel */}
-            <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
+            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
+              <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
+                Licensed Esthetician
+              </p>
+              <h3 className="font-display text-5xl md:text-6xl text-brand-black leading-none font-light mb-6">
+                Brittany
+              </h3>
+              <p className="font-body text-base text-brand-muted leading-relaxed mb-10 max-w-prose">
+                Licensed esthetician with 18 years of experience specializing in lash extensions,
+                full body waxing, and brow lamination. Passionate about helping clients feel
+                confident, polished, and effortlessly beautiful. Proud mom of two who believes
+                self-care isn&apos;t a luxury — it&apos;s a necessity.
+              </p>
+              <div className="grid grid-cols-3 gap-4 border-t border-brand-black/10 pt-8">
+                {[
+                  { stat: '18 yrs', label: 'Experience' },
+                  { stat: 'Lash', label: 'Extensions' },
+                  { stat: 'Brow', label: 'Lamination' },
+                ].map(({ stat, label }) => (
+                  <div key={label} className="flex flex-col gap-1">
+                    <span className="font-display text-2xl text-brand-black font-light leading-none">{stat}</span>
+                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-black/40">{label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* ── Cinnamon ── */}
+          <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+            {/* Portrait — right */}
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-2">
+              <Image
+                src="/images/cinnamon.jpg"
+                alt="Cinnamon — Stylist at Outlawed on Main"
+                fill
+                className="object-cover object-right"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
+            </div>
+            {/* Bio panel — left */}
+            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-1">
               <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
                 Stylist
               </p>
-              <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
+              <h3 className="font-display text-5xl md:text-6xl text-brand-black leading-none font-light mb-6">
                 Cinnamon
               </h3>
-              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-4 max-w-prose">
+              <p className="font-body text-base text-brand-muted leading-relaxed mb-4 max-w-prose">
                 With 18 years behind the chair, I&apos;ve built my career on passion, creativity, and connection.
                 I specialize in blonding, lived-in color, and rich dimensional tones — creating effortless,
                 customized looks that truly suit each client&apos;s features, lifestyle, and personality.
               </p>
-              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-10 max-w-prose">
+              <p className="font-body text-base text-brand-muted leading-relaxed mb-10 max-w-prose">
                 For me, it&apos;s about more than just great hair. It&apos;s about building lasting, trustworthy
                 relationships where my guests feel heard, confident, and completely themselves. I&apos;m dedicated
                 to healthy hair, tailored results, and making every appointment an experience — not just a service. 🤍
               </p>
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-cream/10 pt-8">
+              <div className="grid grid-cols-3 gap-4 border-t border-brand-black/10 pt-8">
                 {[
                   { stat: '18 yrs', label: 'Experience' },
                   { stat: 'Blonde', label: 'Specialist' },
                   { stat: 'Color', label: 'Artist' },
                 ].map(({ stat, label }) => (
                   <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-cream font-light leading-none">{stat}</span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-cream/40">{label}</span>
+                    <span className="font-display text-2xl text-brand-black font-light leading-none">{stat}</span>
+                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-black/40">{label}</span>
                   </div>
                 ))}
               </div>
@@ -299,8 +341,8 @@ export default function AboutPage() {
 
           {/* ── Megan ── */}
           <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-            {/* Bio panel — left for visual alternation */}
-            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-1">
+            {/* Bio panel — right */}
+            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-2">
               <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
                 Stylist
               </p>
@@ -336,58 +378,16 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-            {/* Portrait */}
-            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-2">
+            {/* Portrait — left */}
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-1">
               <Image
                 src="/images/megan.jpg"
                 alt="Megan — Co-Owner and Stylist at Outlawed on Main"
                 fill
-                className="object-cover object-top"
+                className="object-cover object-left"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
-            </div>
-          </div>
-
-          {/* ── Brittany ── */}
-          <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
-            {/* Portrait */}
-            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px]">
-              <Image
-                src="/images/brittany.jpg"
-                alt="Brittany — Licensed Esthetician at Outlawed on Main"
-                fill
-                className="object-cover object-top"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
-            </div>
-            {/* Bio panel */}
-            <div className="bg-brand-black px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center">
-              <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
-                Licensed Esthetician
-              </p>
-              <h3 className="font-display text-5xl md:text-6xl text-brand-cream leading-none font-light mb-6">
-                Brittany
-              </h3>
-              <p className="font-body text-base text-brand-cream/70 leading-relaxed mb-10 max-w-prose">
-                Licensed esthetician with 18 years of experience specializing in lash extensions,
-                full body waxing, and brow lamination. Passionate about helping clients feel
-                confident, polished, and effortlessly beautiful. Proud mom of two who believes
-                self-care isn&apos;t a luxury — it&apos;s a necessity.
-              </p>
-              <div className="grid grid-cols-3 gap-4 border-t border-brand-cream/10 pt-8">
-                {[
-                  { stat: '18 yrs', label: 'Experience' },
-                  { stat: 'Lash', label: 'Extensions' },
-                  { stat: 'Brow', label: 'Lamination' },
-                ].map(({ stat, label }) => (
-                  <div key={label} className="flex flex-col gap-1">
-                    <span className="font-display text-2xl text-brand-cream font-light leading-none">{stat}</span>
-                    <span className="font-body text-xs uppercase tracking-[0.15em] text-brand-cream/40">{label}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
 
