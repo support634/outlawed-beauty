@@ -60,18 +60,14 @@ export default function AboutPage() {
       {/* ─── 2. Partnership Story ───────────────────────────────────────────── */}
       <section className="bg-[#F2EDE6] py-20 md:py-28">
         <div className="max-w-6xl mx-auto px-6 md:px-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
 
-            {/* Left — heading */}
-            <div>
-              <h2 className="font-display text-5xl md:text-6xl text-brand-black leading-none font-light">
+            {/* Left — heading + body copy */}
+            <div className="flex flex-col gap-5">
+              <h2 className="font-display text-5xl md:text-6xl text-brand-black leading-none font-light mb-4">
                 We&apos;re more than<br />
                 <span className="italic">business partners</span>
               </h2>
-            </div>
-
-            {/* Right — body copy */}
-            <div className="flex flex-col gap-5">
               <p className="font-body text-base text-brand-muted leading-relaxed">
                 We&apos;re more than business partners — we&apos;re 15-year best friends.
               </p>
@@ -89,6 +85,17 @@ export default function AboutPage() {
                 This isn&apos;t just a salon. It&apos;s friendship. It&apos;s hustle. It&apos;s
                 western roots with a little outlaw edge.
               </p>
+            </div>
+
+            {/* Right — photo */}
+            <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
+              <Image
+                src="/megan-crystal.jpg"
+                alt="Megan and Crystal — Owners of Outlawed on Main"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
             </div>
 
           </div>
