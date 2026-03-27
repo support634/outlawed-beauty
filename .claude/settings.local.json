@@ -16,7 +16,13 @@
       "WebFetch(domain:meganstegall.glossgenius.com)",
       "Bash(cmd /c \"tasklist /FI \\\\\"PID eq 41540\\\\\"\")",
       "Bash(taskkill /F /IM node.exe 2>&1)",
-      "Bash(taskkill /F /IM node.exe 2>/dev/null || echo \"No node processes found\")"
+      "Bash(taskkill /F /IM node.exe 2>/dev/null || echo \"No node processes found\")",
+      "Bash(tasklist /FI \"IMAGENAME eq node.exe\" 2>/dev/null)",
+      "Bash(curl -sI \"https://source.unsplash.com/featured/?eyelash+extensions\" | grep -i location | head -5)",
+      "Bash(curl -sI \"https://source.unsplash.com/featured/?brow+lamination+eyebrow\" | grep -i location | head -5)",
+      "Bash(curl -sL --max-redirs 5 -o /dev/null -w \"%{url_effective}\" \"https://source.unsplash.com/900x400/?eyelash+extensions\")",
+      "WebFetch(domain:images.pexels.com)",
+      "WebFetch(domain:www.pexels.com)"
     ]
   }
 }

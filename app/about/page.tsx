@@ -364,6 +364,47 @@ export default function AboutPage() {
             </div>
           </div>
 
+          {/* ── Savannah ── */}
+          <div className="mt-6 border border-[#E8E3DC] rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+            {/* Portrait — right */}
+            <div className="relative aspect-[3/4] lg:aspect-auto lg:min-h-[600px] order-1 lg:order-2">
+              <Image
+                src="/images/savannah.jpg"
+                alt="Savannah — Stylist at Outlawed on Main"
+                fill
+                className="object-cover object-top"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-brand-black/50 via-transparent to-transparent lg:hidden" />
+            </div>
+            {/* Bio panel — light, left */}
+            <div className="bg-[#F2EDE6] px-8 py-12 md:px-12 md:py-16 flex flex-col justify-center order-2 lg:order-1">
+              <p className="font-body text-xs uppercase tracking-[0.2em] text-brand-mauve mb-5">
+                Stylist
+              </p>
+              <h3 className="font-display text-5xl md:text-6xl text-brand-black leading-none font-light mb-6">
+                Savannah
+              </h3>
+              <p className="font-body text-base text-brand-muted leading-relaxed mb-4 max-w-prose">
+                Hi, I&apos;m Savannah. I love helping my clients feel beautiful, confident, and truly
+                heard. My favorite part behind the chair is connecting through your life stories
+                while creating hair you love.
+              </p>
+              <p className="font-body text-base text-brand-muted leading-relaxed mb-10 max-w-prose">
+                Outside the salon my favorite place to be is on the boat with my dogs and
+                fianc&eacute;, taking in every bit of sunshine!!
+              </p>
+              <a
+                href="https://saved-by-grace-beauty-bar.square.site/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="self-start bg-brand-black text-brand-cream px-8 py-3.5 rounded-full font-body text-sm font-medium tracking-wide hover:opacity-80 active:scale-[0.98] transition-all duration-200"
+              >
+                Book Savannah
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
 
