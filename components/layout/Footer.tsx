@@ -17,7 +17,7 @@ export default function Footer() {
                 alt="Outlawed on Main — Salon & Boutique"
                 width={160}
                 height={60}
-                className="h-32 w-auto object-contain mb-3"
+                className="h-32 w-auto object-contain mb-4"
               />
             </Link>
             <p className="font-body text-sm text-brand-cream/50 leading-relaxed">
