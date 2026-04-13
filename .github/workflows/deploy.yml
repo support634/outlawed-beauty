@@ -73,7 +73,8 @@ jobs:
             else
               pm2 start npm --name "outlawed-beauty" -- start -- -p 3000
               pm2 save
-              env PATH=$PATH:/usr/bin pm2 startup systemd -u root --hp /root | tail -1 | bash
+              pm2 startup systemd -u root --hp /root || true
+              systemctl enable pm2-root 2>/dev/null || true
             fi
 
             echo "Deployment complete! App running at http://$HOSTNAME"
