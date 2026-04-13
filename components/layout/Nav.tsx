@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 import { BOOKING_URL, NAV_LINKS } from '@/lib/constants'
 
@@ -12,12 +13,16 @@ export default function Nav() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-brand-cream/80 backdrop-blur-md border-b border-[#E8E3DC]/60 transition-all duration-300">
       <div className="max-w-6xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
 
-        {/* Wordmark */}
-        <Link
-          href="/"
-          className="font-display text-xl text-brand-black tracking-wide hover:opacity-70 transition-opacity"
-        >
-          Outlawed on Main
+        {/* Logo */}
+        <Link href="/" className="hover:opacity-70 transition-opacity">
+          <Image
+            src="/logo.jpg"
+            alt="Outlawed on Main — Salon & Boutique"
+            width={160}
+            height={60}
+            className="h-12 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop links */}
