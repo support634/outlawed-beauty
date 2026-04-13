@@ -90,7 +90,7 @@ export default function AboutPage() {
             {/* Right — photo */}
             <div className="relative w-full aspect-[3/4] rounded-2xl overflow-hidden">
               <Image
-                src="/megan-crystal.jpg"
+                src="/founders-photo.jpg"
                 alt="Megan and Crystal — Owners of Outlawed on Main"
                 fill
                 className="object-cover object-center"
