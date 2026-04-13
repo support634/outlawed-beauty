@@ -13,7 +13,7 @@ export default function Footer() {
           <div className="max-w-xs">
             <Link href="/">
               <Image
-                src="/logo.jpg"
+                src="/logo-white.png"
                 alt="Outlawed on Main — Salon & Boutique"
                 width={160}
                 height={60}
