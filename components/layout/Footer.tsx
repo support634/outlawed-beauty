@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Instagram, Facebook } from 'lucide-react'
 import { BOOKING_URL, NAV_LINKS } from '@/lib/constants'
 
@@ -10,9 +11,15 @@ export default function Footer() {
 
           {/* Brand column */}
           <div className="max-w-xs">
-            <p className="font-display text-2xl text-brand-cream mb-3 tracking-wide">
-              Outlawed on Main
-            </p>
+            <Link href="/">
+              <Image
+                src="/logo.jpg"
+                alt="Outlawed on Main — Salon & Boutique"
+                width={160}
+                height={60}
+                className="h-14 w-auto object-contain invert mix-blend-screen mb-3"
+              />
+            </Link>
             <p className="font-body text-sm text-brand-cream/50 leading-relaxed">
               Premium hair coloring, styling, and treatments. Appointment-based. Book online.
             </p>
